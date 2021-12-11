@@ -20,11 +20,14 @@ a {
     --lightWeight-white-color: rgba(240, 248, 255, 0.85);
     --100opacity-white-color: rgb(255, 255, 255);
     --lightWeight-yellow-color: rgba(244, 252, 4, 0.85);
+    --hover-yellow1-color: rgba(170, 177, 5, 0.85);
     --hover-yellow-color: rgb(199, 206, 3);
 }
 
 .header-anchor {
-    background: url("../data/images/rsz_header_wallpaper.jpg") no-repeat center;
+    background: url("../data/images/rsz_header_wallpaper.jpg") no-repeat scroll;
+    background-position-x: center;
+    background-position-y: center;
     background-size: cover;
     height: 100vh;
 }
@@ -80,4 +83,20 @@ a {
     font-family: var(--roboto-slab-font-family);
     font-style: italic;
     font-size: 2rem;
+}
+
+.header-center-text button {
+    background-color: var(--lightWeight-yellow-color);
+    margin-top: 4rem;
+    font-family: var(--ubuntu-font-family);
+    color: var(--100opacity-white-color);
+    font-weight: 700;
+    font-size: 1.2rem;
+    padding: 1.4rem 2.5rem 1.4rem 2.5rem;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+
+.header-center-text button:hover {
+    background-color: var(--hover-yellow1-color);
 }
