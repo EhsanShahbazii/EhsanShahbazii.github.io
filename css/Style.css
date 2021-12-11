@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
 
 * {
     box-sizing: border-box;
@@ -14,7 +16,9 @@ a {
 :root {
     --ubuntu-font-family: 'Ubuntu', sans-serif;
     --dancing-script-font-family: 'Dancing Script', cursive;
+    --roboto-slab-font-family: 'Roboto Slab', serif;
     --lightWeight-white-color: rgba(240, 248, 255, 0.85);
+    --100opacity-white-color: rgb(255, 255, 255);
     --lightWeight-yellow-color: rgba(244, 252, 4, 0.85);
     --hover-yellow-color: rgb(199, 206, 3);
 }
@@ -26,11 +30,10 @@ a {
 }
 
 .header-bar {
+    padding: 1.4rem 4rem 1.4rem 4rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-right: 4rem;
-    padding-left: 4rem;
 }
 
 .header-nav-bar {
@@ -40,16 +43,16 @@ a {
     font-family: var(--ubuntu-font-family);
 }
 
-.header-nav-bar , a {
+.header-nav-bar a {
     color: var(--lightWeight-white-color);
     transition: all 0.3s;
 }
 
-.header-nav-bar , li {
+.header-nav-bar li {
     padding: 1.2rem 1.5rem 1rem 1rem;
 }
 
-.header-nav-bar, a:hover {
+.header-nav-bar a:hover {
     color: var(--hover-yellow-color);
 }
 
@@ -62,3 +65,19 @@ a {
     transition: all 0.3s;
 }
 
+.header-center-text {
+    letter-spacing: 0.12rem;
+    text-align: center;
+    position: center;
+    margin-top: 20vh;
+    font-family: var(--ubuntu-font-family);
+    color: var(--100opacity-white-color);
+    font-size: 2.3rem;
+    line-height: 5rem;
+}
+
+.header-center-text h2 {
+    font-family: var(--roboto-slab-font-family);
+    font-style: italic;
+    font-size: 2rem;
+}
