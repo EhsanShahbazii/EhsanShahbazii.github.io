@@ -9,6 +9,10 @@
     margin: 0;
 }
 
+body {
+    background-color: #f1fff6;
+}
+
 a {
     text-decoration: none;
 }
@@ -23,6 +27,8 @@ a {
     --hover-yellow1-color: rgba(170, 177, 5, 0.85);
     --hover-yellow-color: rgb(199, 206, 3);
 }
+
+/* header anchor css codes */
 
 .header-anchor {
     background: url("../data/images/rsz_header_wallpaper.jpg") no-repeat scroll;
@@ -92,11 +98,52 @@ a {
     color: var(--100opacity-white-color);
     font-weight: 700;
     font-size: 1.2rem;
-    padding: 1.4rem 2.5rem 1.4rem 2.5rem;
+    padding: 1.4rem 2.7rem 1.4rem 2.7rem;
     border-radius: 5px;
+    border: none;
     transition: all 0.5s;
 }
 
 .header-center-text button:hover {
     background-color: var(--hover-yellow1-color);
+}
+
+/* service anchor css codes */
+
+.services-anchor {
+    padding-top: 5rem;
+    text-align: center;
+    font-family: var(--ubuntu-font-family);
+    font-size: 1.7rem;
+    color: #323232;
+}
+
+.services-article h1, h6 {
+    line-height: 3rem;
+}
+
+.services-article p, h6 {
+    color: rgba(50, 50, 50, 0.6);
+    font-size: 1.1rem;
+}
+
+.services-article {
+    line-height: 1.7rem;
+    padding: 3rem 2rem 10rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.services-article article {
+    margin: 2rem;
+}
+.services-article i {
+    color: #cee506;
+    margin-bottom: 1rem;
+}
+
+.services-article p {
+    font-size: 1rem;
+    margin-top: 1rem;
 }
