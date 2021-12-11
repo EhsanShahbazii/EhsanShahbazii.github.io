@@ -7,11 +7,16 @@
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 :root {
     --ubuntu-font-family: 'Ubuntu', sans-serif;
     --dancing-script-font-family: 'Dancing Script', cursive;
     --lightWeight-white-color: rgba(240, 248, 255, 0.85);
     --lightWeight-yellow-color: rgba(244, 252, 4, 0.85);
+    --hover-yellow-color: rgb(199, 206, 3);
 }
 
 .header-anchor {
@@ -33,11 +38,19 @@
     letter-spacing: 0.08rem;
     font-size: 0.95rem;
     font-family: var(--ubuntu-font-family);
+}
+
+.header-nav-bar , a {
     color: var(--lightWeight-white-color);
+    transition: all 0.3s;
 }
 
 .header-nav-bar , li {
     padding: 1.2rem 1.5rem 1rem 1rem;
+}
+
+.header-nav-bar, a:hover {
+    color: var(--hover-yellow-color);
 }
 
 #nav-bar-logo {
@@ -46,8 +59,6 @@
     font-size: 2rem;
     color: var(--lightWeight-yellow-color);
     padding: 1.2rem 1.5rem 1rem 1rem;
+    transition: all 0.3s;
 }
 
-#nav-bar-logo , a {
-    text-decoration: none;
-}
