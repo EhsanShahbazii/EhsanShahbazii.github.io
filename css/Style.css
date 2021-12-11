@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --ubuntu-font-family: 'Ubuntu', sans-serif;
+    --dancing-script-font-family: 'Dancing Script', cursive;
+    --lightWeight-white-color: rgba(240, 248, 255, 0.85);
+    --lightWeight-yellow-color: rgba(244, 252, 4, 0.85);
+}
+
+.header-anchor {
+    background: url("../data/images/rsz_header_wallpaper.jpg") no-repeat center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.header-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 4rem;
+    padding-left: 4rem;
+}
+
+.header-nav-bar {
+    display: flex;
+    letter-spacing: 0.08rem;
+    font-size: 0.95rem;
+    font-family: var(--ubuntu-font-family);
+    color: var(--lightWeight-white-color);
+}
+
+.header-nav-bar , li {
+    padding: 1.2rem 1.5rem 1rem 1rem;
+}
+
+#nav-bar-logo {
+    letter-spacing: 0.1rem;
+    font-family: var(--dancing-script-font-family);
+    font-size: 2rem;
+    color: var(--lightWeight-yellow-color);
+    padding: 1.2rem 1.5rem 1rem 1rem;
+}
+
+#nav-bar-logo , a {
+    text-decoration: none;
+}
