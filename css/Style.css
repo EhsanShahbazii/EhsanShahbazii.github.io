@@ -21,11 +21,28 @@ a {
     --ubuntu-font-family: 'Ubuntu', sans-serif;
     --dancing-script-font-family: 'Dancing Script', cursive;
     --roboto-slab-font-family: 'Roboto Slab', serif;
+    --scroll-background-color: #868686;
     --lightWeight-white-color: rgba(240, 248, 255, 0.85);
     --100opacity-white-color: rgb(255, 255, 255);
     --lightWeight-yellow-color: rgba(244, 252, 4, 0.85);
     --hover-yellow1-color: rgba(170, 177, 5, 0.85);
     --hover-yellow-color: rgb(199, 206, 3);
+}
+
+::-webkit-scrollbar-track
+{
+    background-color: var(--scroll-background-color);
+}
+
+::-webkit-scrollbar
+{
+    width: 10px;
+    background-color: var(--scroll-background-color);
+}
+
+::-webkit-scrollbar-thumb
+{
+    background-color: #000000;
 }
 
 /* header anchor css codes */
@@ -38,11 +55,14 @@ a {
     height: 100vh;
 }
 
-.header-bar {
+#header-bar {
+    width: 100%;
+    position: fixed;
     padding: 1.4rem 4rem 1.4rem 4rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: all 1s;
 }
 
 .header-nav-bar {
@@ -68,7 +88,7 @@ a {
 #nav-bar-logo {
     letter-spacing: 0.1rem;
     font-family: var(--dancing-script-font-family);
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: var(--lightWeight-yellow-color);
     padding: 1.2rem 1.5rem 1rem 1rem;
     transition: all 0.3s;
@@ -78,7 +98,7 @@ a {
     letter-spacing: 0.12rem;
     text-align: center;
     position: center;
-    margin-top: 20vh;
+    padding-top: 15rem;
     font-family: var(--ubuntu-font-family);
     color: var(--100opacity-white-color);
     font-size: 2.3rem;
