@@ -10,6 +10,7 @@
 }
 
 html {
+    overflow-x: hidden;
     scroll-behavior: smooth;
 }
 
@@ -62,6 +63,7 @@ a {
 }
 
 #header-bar {
+    z-index: 3;
     width: 100%;
     position: fixed;
     padding: 1.4rem 7rem 1.4rem 7rem;
@@ -128,7 +130,7 @@ a {
     padding: 1.4rem 2.7rem 1.4rem 2.7rem;
     border-radius: 5px;
     border: none;
-    transition: all 0.5s;
+    transition: all 0.3s;
 }
 
 .header-center-text button:hover {
