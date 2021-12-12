@@ -63,14 +63,14 @@ a {
 }
 
 #header-bar {
-    z-index: 3;
+    z-index: 5;
     width: 100%;
     position: fixed;
     padding: 1.4rem 7rem 1.4rem 7rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transition: all 1s;
+    transition: all 0.7s;
 }
 
 .header-nav-bar {
@@ -179,6 +179,14 @@ a {
     margin-top: 1rem;
 }
 
+.services-anchor i {
+    transition: all 1s;
+}
+
+.services-anchor i:hover {
+    filter: brightness(125%);
+}
+
 /* portfolio css codes */
 
 .portfolio-anchor {
@@ -222,6 +230,7 @@ a {
 
 .portfolio-content img{
     width: 100%;
+    transition: all 0.5s;
 }
 
 .portfolio-text-details h2 {
@@ -230,4 +239,8 @@ a {
 
 .portfolio-text-details h6 {
     padding-bottom: 1rem;
+}
+
+.img-hover:hover {
+    filter: blur(2px);
 }
