@@ -1,3 +1,4 @@
+
 // When the user scrolls down 20px from the top of the document, slide down the navbar
 window.onscroll = () => {
     if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
