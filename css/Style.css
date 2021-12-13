@@ -329,7 +329,6 @@ a {
 }
 
 .about-details-diagram:before {
-    display: none;
     position: absolute;
     top: 0;
     bottom: 25px;
@@ -337,4 +336,90 @@ a {
     margin-left: 50%;
     content: "";
     background-color: #e9ecef;
+}
+
+/* our team css codes */
+
+.ourTeam-anchor {
+    background-color: var(--lightWeight-white-color);
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.ourTeam-contents {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.ourTeam-center-text h1 {
+    text-align: center;
+    font-family: var(--ubuntu-font-family);
+    font-size: 2.7rem;
+    color: #323232;
+}
+
+.ourTeam-center-text h6 {
+    text-align: center;
+    color: rgba(50, 50, 50, 0.7);
+    font-size: 1.1rem;
+    font-weight: 700;
+    font-family: var(--roboto-slab-font-family);
+}
+
+.ourTeam-li-img-div img {
+    width: 100%;
+    height: auto;
+}
+
+.ourTeam-li-img-div {
+    overflow: hidden;
+    width: 225px;
+    height: 225px;
+    border-radius: 50%;
+    border: solid 8px #e9ecef;
+
+}
+
+.ourTeam-li {
+    text-align: center;
+}
+
+.ourTeam-li h2 {
+    margin-top: 1rem;
+    font-family: var(--ubuntu-font-family);
+}
+
+.ourTeam-li h5 {
+    line-height: 1.5rem;
+    color: rgba(50, 50, 50, 0.7);
+    font-size: 0.9rem;
+    font-weight: 700;
+    font-family: var(--roboto-slab-font-family);
+}
+
+.ourTeam-li i {
+    color: #1c1c1c;
+    padding: 0.5rem;
+    transition: all 0.5s;
+}
+
+
+.ourTeam-contents-diagram {
+    padding: 0 10rem 0 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ourTeam-anchor p {
+    text-align: center;
+    line-height: 1.5rem;
+    color: rgba(50, 50, 50, 0.7);
+    font-size: 0.9rem;
+    font-weight: 700;
+    font-family: var(--roboto-slab-font-family);
+}
+
+.ourTeam-li i:hover {
+    color: var(--hover-yellow-color);
 }
