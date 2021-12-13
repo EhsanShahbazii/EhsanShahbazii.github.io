@@ -193,6 +193,7 @@ a {
     text-align: center;
     background-color: var(--lightWeight-white-color);
     padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 
 .portfolio-article {
@@ -243,4 +244,97 @@ a {
 
 .img-hover:hover {
     filter: blur(2px);
+}
+
+/* about css codes */
+
+.about-article {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.about-center-text h1 {
+    text-align: center;
+    font-family: var(--ubuntu-font-family);
+    font-size: 2.7rem;
+    color: #323232;
+}
+
+.about-center-text h6 {
+    text-align: center;
+    color: rgba(50, 50, 50, 0.7);
+    font-size: 1.1rem;
+    font-weight: 700;
+    font-family: var(--roboto-slab-font-family);
+}
+
+.about-details-section {
+    margin-top: 4rem;
+}
+
+.about-li-position {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.about-li-text1, .about-li-text3, .about-li-text5 {
+    width: 20vw;
+    text-align: right;
+    margin-right: 45vw;
+}
+
+.about-li-text p {
+    padding-top: 0.5rem;
+    font-family: var(--roboto-slab-font-family);
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: rgba(50, 50, 50, 0.7);
+}
+
+.about-li-text h2 {
+    line-height: 2rem;
+    font-family: var(--ubuntu-font-family);
+    font-weight: 600;
+    color: black;
+}
+
+.about-img-div img {
+    width: 100%;
+    height: auto;
+}
+
+.about-img-div {
+    position: absolute;
+    overflow: hidden;
+    background-color: #1da4e2;
+    width: 165px;
+    height: 165px;
+    border-radius: 50%;
+    border: solid 7px #e9ecef;
+}
+
+.about-li2, .about-li3, .about-li4, .about-li5 {
+    padding-top: 10rem;
+}
+
+.about-li-text2, .about-li-text4 {
+    text-align: left;
+    width: 20vw;
+    margin-left: 45vw;
+}
+
+.about-details-diagram {
+    position: relative;
+}
+
+.about-details-diagram:before {
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 25px;
+    width: 2px;
+    margin-left: 50%;
+    content: "";
+    background-color: #e9ecef;
 }
