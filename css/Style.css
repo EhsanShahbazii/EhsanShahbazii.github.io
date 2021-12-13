@@ -338,6 +338,11 @@ a {
     background-color: #e9ecef;
 }
 
+.about-img-div:hover {
+    border-radius: 50%;
+    border: solid 7px var(--hover-yellow-color);
+}
+
 /* our team css codes */
 
 .ourTeam-anchor {
@@ -377,6 +382,7 @@ a {
     height: 225px;
     border-radius: 50%;
     border: solid 8px #e9ecef;
+    transition: all 0.5s;
 
 }
 
@@ -423,3 +429,12 @@ a {
 .ourTeam-li i:hover {
     color: var(--hover-yellow-color);
 }
+
+.ourTeam-li-img-div:hover {
+    border-radius: 50%;
+    border: solid 8px var(--hover-yellow-color);
+}
+
+/* content us css codes */
+
+
