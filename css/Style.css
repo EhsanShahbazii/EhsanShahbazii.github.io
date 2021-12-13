@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
 
 * {
     box-sizing: border-box;
@@ -23,6 +25,7 @@ a {
 }
 
 :root {
+    --acme-place-holder-font-family: 'Acme', sans-serif;
     --ubuntu-font-family: 'Ubuntu', sans-serif;
     --dancing-script-font-family: 'Dancing Script', cursive;
     --roboto-slab-font-family: 'Roboto Slab', serif;
@@ -459,4 +462,78 @@ a {
 
 #ibm-pic {
     width: 40%;
+}
+
+/* contact us css codes */
+
+.contact-us-anchor {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background: url("../data/images/rsz_1footer_wallpaper.jpg") no-repeat scroll;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.contact-us-center-text h1 {
+    text-align: center;
+    font-family: var(--ubuntu-font-family);
+    font-size: 2.7rem;
+    color: var(--100opacity-white-color);
+}
+
+.contact-us-center-text h6 {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.45);
+    font-size: 1.1rem;
+    font-weight: 700;
+    font-family: var(--roboto-slab-font-family);
+}
+
+.contact-us-form-div {
+    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-us-form-text-field-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-us-input, .contact-us-input-area-field {
+    font-family: var(--acme-place-holder-font-family);
+    font-size: 1.1rem;
+    padding: 1rem;
+    margin: 1rem;
+    width: 40vw;
+    height: 7vh;
+    border: 1px solid #ccc;
+    border-radius: 0.2rem;
+    transition: all 0.5s;
+}
+
+.contact-us-input:focus {
+    border: solid 4px var(--hover-yellow-color);
+    outline: none;
+}
+
+.contact-us-input-area-field:focus {
+    border: solid 4px var(--hover-yellow-color);
+    outline: none;
+}
+
+.contact-us-input-area-field {
+    height: 29vh;
+}
+
+.contact-us-input::placeholder {
+    opacity: 50%;
+
+}
+
+.contact-us-input-area-field::placeholder {
+    opacity: 50%;
 }
