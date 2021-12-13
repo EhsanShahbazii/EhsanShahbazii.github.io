@@ -30,6 +30,7 @@ a {
     --dancing-script-font-family: 'Dancing Script', cursive;
     --roboto-slab-font-family: 'Roboto Slab', serif;
     --scroll-background-color: #868686;
+    --icons-soft-black-color: #1c1c1c;
     --lightWeight-white-color: rgba(240, 248, 255, 0.85);
     --100opacity-white-color: rgb(255, 255, 255);
     --lightWeight-yellow-color: rgba(244, 252, 4, 0.85);
@@ -407,7 +408,7 @@ a {
 }
 
 .ourTeam-li i {
-    color: #1c1c1c;
+    color: var(--icons-soft-black-color);
     padding: 0.5rem;
     transition: all 0.5s;
 }
@@ -467,13 +468,12 @@ a {
 /* contact us css codes */
 
 .contact-us-anchor {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 4rem;
     background: url("../data/images/rsz_1footer_wallpaper.jpg") no-repeat scroll;
     background-position-x: center;
     background-position-y: center;
     background-size: cover;
-    height: 100vh;
+    height: 80vh;
 }
 
 .contact-us-center-text h1 {
@@ -492,7 +492,7 @@ a {
 }
 
 .contact-us-form-div {
-    margin-top: 10rem;
+    margin-top: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -507,9 +507,9 @@ a {
     font-family: var(--acme-place-holder-font-family);
     font-size: 1.1rem;
     padding: 1rem;
-    margin: 1rem;
-    width: 40vw;
-    height: 7vh;
+    margin: 0.8rem;
+    width: 42vw;
+    height: 8vh;
     border: 1px solid #ccc;
     border-radius: 0.2rem;
     transition: all 0.5s;
@@ -526,7 +526,7 @@ a {
 }
 
 .contact-us-input-area-field {
-    height: 29vh;
+    height: 30.4vh;
 }
 
 .contact-us-input::placeholder {
@@ -536,4 +536,60 @@ a {
 
 .contact-us-input-area-field::placeholder {
     opacity: 50%;
+}
+
+.contact-us-button-div {
+    display: flex;
+    justify-content: center;
+}
+.contact-us-button-send-message {
+    cursor: pointer;
+    color: var(--100opacity-white-color);
+    background-color: var(--lightWeight-yellow-color);
+    margin-top: 2rem;
+    font-family: var(--ubuntu-font-family);
+    font-weight: 700;
+    font-size: 1.2rem;
+    padding: 1.4rem 2.7rem 1.4rem 2.7rem;
+    border-radius: 5px;
+    border: none;
+    transition: all 0.3s;
+}
+
+.contact-us-button-send-message:hover {
+    background-color: var(--hover-yellow1-color);
+}
+
+/* footer css codes */
+
+.footer-anchor {
+    font-family: var(--ubuntu-font-family);
+    height: 12vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 7vw 0 7vw;
+}
+
+.footer-icons-div a{
+    color: var(--icons-soft-black-color);
+}
+
+.footer-icons-div i{
+    margin: 0.5rem;
+    transition: all 0.5s;
+}
+
+.footer-icons-div i:hover {
+    color: var(--hover-yellow-color);
+}
+
+.policy-div a {
+    padding: 0.5rem;
+    color: rgba(50, 50, 50, 0.7);
+}
+
+.copyright-text {
+    padding: 0.5rem;
+    color: rgba(50, 50, 50, 0.7);
 }
