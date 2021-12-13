@@ -435,6 +435,28 @@ a {
     border: solid 8px var(--hover-yellow-color);
 }
 
-/* content us css codes */
+/* famous logo css codes */
 
+.famous-logo-anchor {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
 
+.famous-logo-ul-diagram img {
+    width: 60%;
+}
+
+.famous-logo-ul-diagram {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 8rem 0 8rem;
+}
+
+.famous-logo-li {
+    text-align: center;
+}
+
+#ibm-pic {
+    width: 40%;
+}
