@@ -14,12 +14,15 @@ window.onscroll = () => {
     header_bar_li3_vars = document.getElementById("header-bar-li3");
     header_bar_li4_vars = document.getElementById("header-bar-li4");
     header_bar_li5_vars = document.getElementById("header-bar-li5");
-    //refresh header nav bar component colors
-    header_bar_li5_vars.style.color = white_unhover_color;
-    header_bar_li4_vars.style.color = white_unhover_color;
-    header_bar_li3_vars.style.color = white_unhover_color;
-    header_bar_li2_vars.style.color = white_unhover_color;
-    header_bar_li1_vars.style.color = white_unhover_color;
+    
+    //reset nav bar components color function
+    const resetColors = () => {
+        header_bar_li1_vars.style.color = white_unhover_color;
+        header_bar_li5_vars.style.color = white_unhover_color;
+        header_bar_li4_vars.style.color = white_unhover_color;
+        header_bar_li3_vars.style.color = white_unhover_color;
+        header_bar_li2_vars.style.color = white_unhover_color;
+    }
 
     //for header nav bar animation
     if (dbodyScrollTop > 10 || ddocescrollTop > 10) {
@@ -33,17 +36,25 @@ window.onscroll = () => {
     }
 
     //for nav bar  components color when scroll the window
-    if (dbodyScrollTop < 720 || ddocescrollTop < 720)
-        header_bar_li1_vars.style.color = white_unhover_color;
-    if ((dbodyScrollTop > 720 || ddocescrollTop > 720) && (dbodyScrollTop < 1450 || ddocescrollTop < 1450))
+    if ((dbodyScrollTop > 720 || ddocescrollTop > 720) && (dbodyScrollTop < 1450 || ddocescrollTop < 1450)) {
+        resetColors();
         header_bar_li1_vars.style.color = yellow_hover_color;
-    if ((dbodyScrollTop > 1451 || ddocescrollTop > 1451) && (dbodyScrollTop < 2365 || ddocescrollTop < 2365))
+    }
+    if ((dbodyScrollTop > 1451 || ddocescrollTop > 1451) && (dbodyScrollTop < 2365 || ddocescrollTop < 2365)) {
+        resetColors();
         header_bar_li2_vars.style.color = yellow_hover_color;
-    if ((dbodyScrollTop > 2566 || ddocescrollTop > 2566) && (dbodyScrollTop < 4620 || ddocescrollTop < 4620))
+    }
+    if ((dbodyScrollTop > 2566 || ddocescrollTop > 2566) && (dbodyScrollTop < 4620 || ddocescrollTop < 4620)) {
+        resetColors();
         header_bar_li3_vars.style.color = yellow_hover_color;
-    if ((dbodyScrollTop > 4421 || ddocescrollTop > 4421) && (dbodyScrollTop < 5480 || ddocescrollTop < 5480))
+    }
+    if ((dbodyScrollTop > 4421 || ddocescrollTop > 4421) && (dbodyScrollTop < 5480 || ddocescrollTop < 5480)) {
+        resetColors();
         header_bar_li4_vars.style.color = yellow_hover_color;
-    if (dbodyScrollTop > 5370 || ddocescrollTop > 5370)
+    }
+    if (dbodyScrollTop > 5370 || ddocescrollTop > 5370) {
+        resetColors();
         header_bar_li5_vars.style.color = yellow_hover_color;
+    }
 };
 
