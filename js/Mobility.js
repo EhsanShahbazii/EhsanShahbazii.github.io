@@ -14,7 +14,7 @@ window.onscroll = () => {
     header_bar_li3_vars = document.getElementById("header-bar-li3");
     header_bar_li4_vars = document.getElementById("header-bar-li4");
     header_bar_li5_vars = document.getElementById("header-bar-li5");
-    
+
     //reset nav bar components color function
     const resetColors = () => {
         header_bar_li1_vars.style.color = white_unhover_color;
@@ -36,6 +36,9 @@ window.onscroll = () => {
     }
 
     //for nav bar  components color when scroll the window
+    if (dbodyScrollTop < 719 || ddocescrollTop < 719) {
+        resetColors();
+    }
     if ((dbodyScrollTop > 720 || ddocescrollTop > 720) && (dbodyScrollTop < 1450 || ddocescrollTop < 1450)) {
         resetColors();
         header_bar_li1_vars.style.color = yellow_hover_color;
